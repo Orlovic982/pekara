@@ -8,7 +8,7 @@ title: "Happy Jekylling!"
         <!--Burger menu-->
         <div class="flex md:hidden flex-col  bg-gray-200 bg-opacity-80" id="burger">
             <div class="flex justify-between items-center">
-              <img src="{{site.url}}/{{site.baseurl}}/images/pekara_logo_2.png" alt="">
+               <img src="{{site.url}}/{{site.baseurl}}/images/pekara_logo_2.png" alt="">
                  <img src="{{site.url}}/{{site.baseurl}}/images/hamburger-menu.png" alt="">
             </div>
             <div class="hidden" id="menu">

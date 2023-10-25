@@ -12,6 +12,22 @@
 
   {{ content }}
   {% include footer.html %}
+  <script>
+
+console.log('conected');
+    const menu = document.getElementById('menu')
+
+    const burger = document.getElementById('burger').addEventListener('click', () => {
+
+        console.log('Clicked');
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+        }
+    })
+
+</script>
 </body>
 
 </html>
