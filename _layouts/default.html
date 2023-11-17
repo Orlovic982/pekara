@@ -6,28 +6,24 @@
   <meta charset="utf-8">
   <title>{{ page.title }} - {{ site.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <script>
+    function toggleSlideover() {
+      console.log("clicked")
+        document.getElementById('menu').classList.toggle('hidden');
+        document.getElementById('slideover-container').classList.toggle('invisible');
+        document.getElementById('slideover-bg').classList.toggle('opacity-0');
+        document.getElementById('slideover-bg').classList.toggle('opacity-50');
+        document.getElementById('slideover').classList.toggle('-translate-x-full');
+    }
+</script>
+
 </head>
 
 <body>
-
+  {% include header.html %}
   {{ content }}
   {% include footer.html %}
-  <script>
 
-console.log('conected');
-    const menu = document.getElementById('menu')
-
-    const burger = document.getElementById('burger').addEventListener('click', () => {
-
-        console.log('Clicked');
-        if (menu.classList.contains('hidden')) {
-            menu.classList.remove('hidden');
-        } else {
-            menu.classList.add('hidden');
-        }
-    })
-
-</script>
 </body>
 
 </html>
