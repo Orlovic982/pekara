@@ -4,55 +4,94 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Happy Jekylling! - </title>
+  <title>Pocetna - </title>
   <link rel="stylesheet" href="/pekara/assets/css/main.css">
+  <script>
+    function toggleSlideover() {
+      console.log("clicked")
+        document.getElementById('menu').classList.toggle('hidden');
+        document.getElementById('slideover-container').classList.toggle('invisible');
+        document.getElementById('slideover-bg').classList.toggle('opacity-0');
+        document.getElementById('slideover-bg').classList.toggle('opacity-50');
+        document.getElementById('slideover').classList.toggle('-translate-x-full');
+    }
+</script>
+
 </head>
 
 <body>
-
-  <div class="relative bg-no-repeat bg-cover  lg:bg-center
-  bg-right-top " style="background-image: url('https://orlovic982.github.io//pekara/images/bakery_header.png');">
-        <!--Burger menu-->
-        <div class="flex md:hidden flex-col  bg-gray-200 bg-opacity-80" id="burger">
-            <div class="flex justify-between items-center">
-               <img src="https://orlovic982.github.io//pekara/images/pekara_logo_2.png" alt="" />
-                 <img src="https://orlovic982.github.io//pekara/images/hamburger-menu.png" alt="" />
-            </div>
-            <div class="hidden" id="menu">
-                <div><a href="index.html" class="text-black border-r-2 flex justify-center">Naslovna</a></div>
-                <div><a href="onama.html" class="text-black flex justify-center">O nama</a></div>
-                <div><a href="#" class="text-black flex justify-center">Proizvodi</a></div>
-                <div><a href="#" class="text-black flex justify-center">Kontakt</a></div>
+  
+    <!--Menu-->
+    <div id="menu" class="fixed top-0 left-0 w-full  z-10 ">
+        <!-- Left element, e.g., a logo or a title -->
+        <div class="md:hidden flex justify-between items-center  bg-white bg-opacity-80">
+            <div>
+                <a href="#" class=""> <img src="https://orlovic982.github.io//pekara/images/pekara_logo_2.png" alt="" class="w-20 h-auto text-gold">
+                </a>
             </div>
 
-
-</div>
-
-
-<div class="hidden md:block w-full p-4  bg-gray-200 bg-opacity-80">
-            <div class="flex lg:w-1/2 flex-1 items-center justify-between mx-auto ">
-                <div><a href="index.html" class="text-black ">Naslovna</a></div>
-                <div><a href="onama.html" class="text-black">O nama</a></div>
-                <img src="https://orlovic982.github.io//pekara/images/pekara_logo_2.png" alt="" />
-                <div><a href="#" class="text-black">Proizvodi</a></div>
+            <!-- Right element, e.g., a button to open the menu -->
+            <svg onclick="toggleSlideover()" id="menu-button" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+            </svg>
+        </div>
+        <!--Navbar-->
+        <div class="hidden md:flex bg-white bg-opacity-80 ">
+            <div class="flex max-w-5xl mx-auto p-2   flex-1 items-center justify-between ">
+                <div><a href="https://orlovic982.github.io//pekara/index.html" class="text-black ">Naslovna</a></div>
+                <div><a href="https://orlovic982.github.io//pekara/onama.html" class="text-black">O nama</a></div>
+                <img src="https://orlovic982.github.io//pekara/images/pekara_logo_2.png" alt="" class="w-20 h-auto">
+                <div><a href="https://orlovic982.github.io//pekara/proizvodi.html" class="text-black">Proizvodi</a></div>
                 <div><a href="#" class="text-black">Kontakt</a></div>
             </div>
         </div>
-
-
-<div class="bg-orange-300 justify-center px-2 hidden md:flex">
+        <div class="bg-orange-300 justify-center px-2 hidden md:flex">
             <p class="text-center">Kisačka 19b, ponedeljak-subota od 6 do 20h, nedeljom od 6 do 12h</p>
         </div>
+    </div>
+    </div>
 
+    <!--Slideover full size container-->
+    <div id="slideover-container" class="w-full h-full fixed inset-0 invisible z-50">
+        <!--Slider background-->
+        <div onclick="toggleSlideover()" id="slideover-bg"
+            class="w-full h-full duration-500 ease-out transition-all inset-0 absolute bg-gray-900 opacity-0"></div>
+        <!--Slider menu-->
+        <div onclick="toggleSlideover()" id="slideover"
+            class="w-96 z-10 bg-white h-full fixed left-0 top-0 h-full w-64 bg-white transform -translate-x-full transition-transform ease-in-out duration-300">
+            <!--Exit button-->
+            <div
+                class="absolute cursor-pointer text-gray-600 top-0 w-8 h-8 flex items-center justify-center right-0 mt-5 mr-5">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </div>
+            <div class="mt-20 items-center">  
+            <div class="text-center "><a href="https://orlovic982.github.io//pekara/index.html" class="text-black ">Naslovna</a></div>
+            <div class="text-center "><a href="https://orlovic982.github.io//pekara/onama.html" class="text-black">O nama</a></div>
         
-<div class="flex justify-center py-44">
+            <div class="text-center "><a href="https://orlovic982.github.io//pekara/proizvodi.html" class="text-black">Proizvodi</a></div>
+            <div class="text-center "><a href="#" class="text-black">Kontakt</a></div>
+            </div>
+        </div>
+    </div>
+
+
+  <!--Feature1-->
+<div class="relative bg-no-repeat bg-cover  lg:bg-center
+  bg-top " style="background-image: url('https://orlovic982.github.io//pekara/images/bakery_header.png');">
+        <div class="flex justify-center py-44">
             <div class="flex-col">
                 <div class="text-center font-imperialCursive text- text-orange-300 text-5xl">Svezina i ukus</div>
                 <div class="text-center font-abrilFatface text-2xl text-white text-5xl">U SVAKOM ZALOGAJU!</div>
                 <div class="mx-auto w-52 p-2 rounded-sm justify-center bg-orange-500 text-center mt-4 text-xs text-white ">
                     Nasi proizvodi</div>
             </div>
- </div>
+        </div>
 </div>
 
 <div class="flex flex-col mx-10 lg:p-20 p-5">
@@ -80,7 +119,7 @@
         </div>
     </div>
 
-<div class=" bg-no-repeat bg-cover lg:bg-center bg-right-top p-8 lg:p-32" style="background-image: url('https://orlovic982.github.io//pekara/images/paper_bag_with_bread_and_basket_of_pastry.png');">
+<div class="bg-[url('/paper_bag_with_bread_and_basket_of_pastry.png')] bg-no-repeat bg-cover lg:bg-center bg-right-top p-8 lg:p-32">
         <div class="flex flex-col justify-center bg-white lg:p-32 p-5">
             <div class="text-center mt-3 font-imperialCursive text-gold text-5xl ">
                 Ukus domaćeg peciva
@@ -117,9 +156,9 @@
         <div class="text-center font-abrilFatface mt-3 text-5xl">
             NAŠA DOMAĆA TAJNA
         </div>
-        <div class="grid md:grid-cols-3 gap-3">
-            <!--Card 1-->
-            <div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+<div class="grid md:grid-cols-3 gap-3">
+            
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
                 <a href="#">
                     <img class="rounded-t-lg" src="https://orlovic982.github.io//pekara/images/mask_group.png" alt="" />
                 </a>
@@ -132,7 +171,7 @@
                         eligendi sequi quo. Accusantium, architecto omnis!.</p>
                 </div>
             </div>
-            <!--Card 1-->
+            <!--Card 2-->
             <div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
                 <a href="#">
                     <img class="rounded-t-lg" src="https://orlovic982.github.io//pekara/images/hleb.png" alt="" />
@@ -144,10 +183,10 @@
                     <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
                         error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
                         eligendi sequi quo. Accusantium, architecto omnis!.</p>
-                </div>
-            </div>
-            <!--Card 3-->
-            <div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+</div>
+</div>
+            
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
                 <a href="#">
                     <img class="rounded-t-lg" src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
                 </a>
@@ -161,10 +200,32 @@
                 </div>
             </div>
         </div>
+</div>
+<div class="bg-slate-800 p-20 justify-center flex flex-col-reverse md:flex-row ">
+         <img src="https://orlovic982.github.io//pekara/images/pekara_logo_2.png" alt="" />
+        <div class="max-w-lg">
+            <div class="text-white"> Cenimo vase misljenje</div>
+            <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nisi cumque harum,
+                alias quam omnis deserunt quidem labore recusandae quo blanditiis. Blanditiis nulla odit quo! Omnis
+                dolorum eveniet ex sint.</div>
+            <div class="flex">
+                <img src="https://orlovic982.github.io//pekara/images/🦆 icon _email_.png" alt="" />
+                <div class="text-white"> orlandusdoo@gmail.com</div>
+            </div>
+        </div>
     </div>
 
+<div class="bg-slate-900 px-20 py-4 flex justify-between items-center">
+        <div class="text-white">&#169; 2023 Orlandus.All Rights reserved</div>
+        <div class="text-white flex">
+            <div class="mr-10">Private policy</div>
+            <div>Terms &#38; conditions</div>
+</div>
+</div>
+
+
   <div class="bg-slate-800 p-20 justify-center flex flex-col-reverse md:flex-row ">
-    <img src="https://orlovic982.github.io//pekara/images/pekara_logo_2.png" alt="">
+    <img src="https://orlovic982.github.io//pekara/images/pekara_logo_2.png" alt="" class="w-20">
     <div class="max-w-lg">
         <div class="text-white"> Cenimo vase misljenje</div>
         <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nisi cumque harum,
@@ -184,22 +245,7 @@
         <div>Terms &#38; conditions</div>
     </div>
 </div>
-  <script>
 
-console.log('conected');
-    const menu = document.getElementById('menu')
-
-    const burger = document.getElementById('burger').addEventListener('click', () => {
-
-        console.log('Clicked');
-        if (menu.classList.contains('hidden')) {
-            menu.classList.remove('hidden');
-        } else {
-            menu.classList.add('hidden');
-        }
-    })
-
-</script>
 </body>
 
 </html>

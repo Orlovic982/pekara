@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang=" en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Proizvodi - </title>
+  <link rel="stylesheet" href="/pekara/assets/css/main.css">
+  <script>
+    function toggleSlideover() {
+      console.log("clicked")
+        document.getElementById('menu').classList.toggle('hidden');
+        document.getElementById('slideover-container').classList.toggle('invisible');
+        document.getElementById('slideover-bg').classList.toggle('opacity-0');
+        document.getElementById('slideover-bg').classList.toggle('opacity-50');
+        document.getElementById('slideover').classList.toggle('-translate-x-full');
+    }
+</script>
+
+</head>
+
+<body>
+  
+    <!--Menu-->
+    <div id="menu" class="fixed top-0 left-0 w-full  z-10 ">
+        <!-- Left element, e.g., a logo or a title -->
+        <div class="md:hidden flex justify-between items-center  bg-white bg-opacity-80">
+            <div>
+                <a href="#" class=""> <img src="https://orlovic982.github.io//pekara/images/pekara_logo_2.png" alt="" class="w-20 h-auto text-gold">
+                </a>
+            </div>
+
+            <!-- Right element, e.g., a button to open the menu -->
+            <svg onclick="toggleSlideover()" id="menu-button" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+            </svg>
+        </div>
+        <!--Navbar-->
+        <div class="hidden md:flex bg-white bg-opacity-80 ">
+            <div class="flex max-w-5xl mx-auto p-2   flex-1 items-center justify-between ">
+                <div><a href="https://orlovic982.github.io//pekara/index.html" class="text-black ">Naslovna</a></div>
+                <div><a href="https://orlovic982.github.io//pekara/onama.html" class="text-black">O nama</a></div>
+                <img src="https://orlovic982.github.io//pekara/images/pekara_logo_2.png" alt="" class="w-20 h-auto">
+                <div><a href="https://orlovic982.github.io//pekara/proizvodi.html" class="text-black">Proizvodi</a></div>
+                <div><a href="#" class="text-black">Kontakt</a></div>
+            </div>
+        </div>
+        <div class="bg-orange-300 justify-center px-2 hidden md:flex">
+            <p class="text-center">Kisačka 19b, ponedeljak-subota od 6 do 20h, nedeljom od 6 do 12h</p>
+        </div>
+    </div>
+    </div>
+
+    <!--Slideover full size container-->
+    <div id="slideover-container" class="w-full h-full fixed inset-0 invisible z-50">
+        <!--Slider background-->
+        <div onclick="toggleSlideover()" id="slideover-bg"
+            class="w-full h-full duration-500 ease-out transition-all inset-0 absolute bg-gray-900 opacity-0"></div>
+        <!--Slider menu-->
+        <div onclick="toggleSlideover()" id="slideover"
+            class="w-96 z-10 bg-white h-full fixed left-0 top-0 h-full w-64 bg-white transform -translate-x-full transition-transform ease-in-out duration-300">
+            <!--Exit button-->
+            <div
+                class="absolute cursor-pointer text-gray-600 top-0 w-8 h-8 flex items-center justify-center right-0 mt-5 mr-5">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </div>
+            <div class="mt-20 items-center">  
+            <div class="text-center "><a href="https://orlovic982.github.io//pekara/index.html" class="text-black ">Naslovna</a></div>
+            <div class="text-center "><a href="https://orlovic982.github.io//pekara/onama.html" class="text-black">O nama</a></div>
+        
+            <div class="text-center "><a href="https://orlovic982.github.io//pekara/proizvodi.html" class="text-black">Proizvodi</a></div>
+            <div class="text-center "><a href="#" class="text-black">Kontakt</a></div>
+            </div>
+        </div>
+    </div>
+
+
+  <div class="max-w-md mx-auto py-5 md:py-10 text-center">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa quaerat architecto eveniet repellat, explicabo
+        molestiae maiores natus officiis facere. Tempore, ex perspiciatis. Odit reiciendis, laboriosam reprehenderit
+        sapiente placeat provident fugiat.
+    </div>
+
+<div class="grid lg:grid-cols-4 md:grid-cols-3 gap-3 mx-2 md:mx-16">
+
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+  <img src="https://orlovic982.github.io//pekara/images/mask_group.png" alt="" />
+                     </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+  <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+                     </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+        
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+          <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+             </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+  <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+                     </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+        
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+          <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+             </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+      
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+  <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+                     </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+  <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+                     </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+  <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+                     </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+  <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+                     </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+  <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+                     </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+   <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+                    </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+              <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+                     <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+            <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+                </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+<div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <a href="#">
+                <img src="https://orlovic982.github.io//pekara/images/mesi_hleb.png" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl tracking-tight text-gray-900">Upoznajte nas</h5>
+                </a>
+                <p class="mb-3 font-normal ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magnam
+                    error itaque vel, fuga atque ipsa at ullam unde quia voluptatibus! Veniam consequatur ut
+                    eligendi sequi quo. Accusantium, architecto omnis!.</p>
+            </div>
+        </div>
+
+    </div>
+
+  <div class="bg-slate-800 p-20 justify-center flex flex-col-reverse md:flex-row ">
+    <img src="https://orlovic982.github.io//pekara/images/pekara_logo_2.png" alt="" class="w-20">
+    <div class="max-w-lg">
+        <div class="text-white"> Cenimo vase misljenje</div>
+        <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nisi cumque harum,
+            alias quam omnis deserunt quidem labore recusandae quo blanditiis. Blanditiis nulla odit quo! Omnis
+            dolorum eveniet ex sint.</div>
+        <div class="flex">
+            <img src="https://orlovic982.github.io//pekara/images/icon _email_.png" alt="">
+            <div class="text-white"> orlandusdoo@gmail.com</div>
+        </div>
+    </div>
+</div>
+<!--Footer-->
+<div class="bg-slate-900 px-20 py-4 flex justify-between items-center">
+    <div class="text-white">&#169; 2023 Orlandus.All Rights reserved</div>
+    <div class="text-white flex">
+        <div class="mr-10">Private policy</div>
+        <div>Terms &#38; conditions</div>
+    </div>
+</div>
+
+</body>
+
+</html>
